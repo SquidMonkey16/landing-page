@@ -10,10 +10,6 @@ body {
     flex-direction: column;
 }
 
-* {
-    /* border: 2px solid red; */
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -23,10 +19,15 @@ ul {
 
 button {
     background-color: #3882f6;
-    color: #e5e7eb;
+    color: #f9faf8;
     border: none;
     padding: 6px 24px;
     border-radius: 5px;
+}
+
+.action-box button {
+    border: 2px solid #f9faf8;
+    border-radius: 7px;
 }
 
 .push-right {
@@ -149,6 +150,33 @@ button {
 
 .four {
     flex: 1;
+    padding: 100px 200px;
+}
+
+.action-box {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 40px 80px;
+}
+
+.action-box div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.action-heading {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.action-text {
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 .footer {
